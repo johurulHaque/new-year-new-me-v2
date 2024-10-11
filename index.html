@@ -34,6 +34,14 @@
         color: rgb(0, 95, 172);
     }
 
+    .section-title {
+        color: rgb(21, 20, 20);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+    }
+
+
     /* header style */
     header {
         background-image: url('./images/banner/banner3.png');
@@ -88,13 +96,6 @@
         text-align: left;
     }
 
-    .column-title {
-        color: rgb(21, 20, 20);
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 47px;
-    }
-
     .column-description {
         color: rgb(68, 67, 67);
         font-size: 16px;
@@ -108,7 +109,32 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
-        list-style-type: none;        
+        list-style-type: none;
+    }
+
+    /* plan style */
+    .plan {
+        margin-top: 100px;
+    }
+
+    .plan-container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .plan-item {
+        margin: 20px 0px;
+
+    }
+
+    .item-heading {
+        margin: 6px 0px;
+        color: rgb(21, 20, 20);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0%;
     }
 </style>
 
@@ -130,13 +156,14 @@
     </header>
     <!-- main -->
     <main>
+        <!-- failure -->
         <section class="failure">
             <div class="failure-column">
                 <div class="circle"></div>
                 <img src="./images/person.png" width="400px" alt="">
             </div>
             <div class="failure-column">
-                <h2 class="column-title">
+                <h2 class="section-title">
                     My failures of previous year
                 </h2>
                 <p class="column-description">
@@ -144,12 +171,45 @@
                     classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
                 </p>
                 <ul class="failure-list">
-                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to popular belief, is not simply.</li>
-                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to popular belief.</li>
-                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to popular , is not simply.</li>
-                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to popular belief, is not simply.</li>
-                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to popular simply.</li>
-                </ul>            
+                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to
+                        popular belief, is not simply.</li>
+                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to
+                        popular belief.</li>
+                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to
+                        popular , is not simply.</li>
+                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to
+                        popular belief, is not simply.</li>
+                    <li><i class="fa-solid fa-check" style="color: rgb(22, 216, 135);margin-right: 8px;"></i>Contrary to
+                        popular simply.</li>
+                </ul>
+        </section>
+        <!-- plan -->
+        <section class="plan">
+            <h2 class="section-title" style="text-align: center;">
+                My Plans
+            </h2>
+            <div class="plan-container">
+                <div class="plan-item">
+                    <img src="./images/icons/web.png" alt="">
+                    <h3 class="item-heading">Web Development</h3>
+                    <p>I want to start</p>
+                </div>
+                <div class="plan-item">
+                    <img src="./images/icons/js.png" alt="">
+                    <h3 class="item-heading">Javascript</h3>
+                    <p>I want to learn</p>
+                </div>
+                <div class="plan-item">
+                    <img src="./images/icons/smoke.png" alt="">
+                    <h3 class="item-heading">Smoking Habit</h3>
+                    <p>I want to end</p>
+                </div>
+                <div class="plan-item">
+                    <img src="./images/icons/ecom.png" alt="">
+                    <h3 class="item-heading">ecommerce</h3>
+                    <p>I want to develop</p>
+                </div>
+            </div>
         </section>
 
     </main>
